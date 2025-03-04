@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <title>COMBUSTÍVEL</title>
+</head>
+<body>
+    <h1>Controle de Combustível</h1>
+    <p>Programa criado para saber a média de combustível gasto e quanto de Km por litro o seu carro está fazendo.</p>
+    <form id="consumoForm">
+        <label for="Km">Quilômetros percorridos: </label>
+        <input type="number" id="Km" name="Km" step="0.01" required>
+
+        <label for="litros">Litros consumidos: </label>
+        <input type="number" id="litros" name="litros" step="0.01" required>
+
+        <label for="data">Data do Abastecimento: </label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="valor">Valor do Abastecimento: </label>
+        <input type="number" id="valor" name="valor" step="0.01" required placeholder="R$">
+
+        <button type="submit">Calcular</button>
+    </form>
+        <h2>Registros Salvos</h2>
+        <p>Aqui está registrado os serviços realizados.</p>
+        <table id="tabelaRegistros" border="1">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Quilometragem percorridos</th>
+                    <th>Litros</th>
+                    <th>Valor</th>
+                    <th>Consumo Médio (Km/L)</th>
+                    <th>Custo por Litro</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Os registros serão inseridos aqui -->
+            </tbody>
+        </table>
+</form>
+<div id="resultado"></div>
+<script type="text/javascript" src="JAVASCRIPT/scripts.js"></script>
+</body>
+</html>

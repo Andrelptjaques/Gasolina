@@ -1,0 +1,96 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: 'Lato', 'Playfair Display', 'Roboto Slab', sans-serif;
+    background-color: #f4f4f4;
+    margin: 10;
+    padding: 20px;
+}
+
+/* Estilo para o título principal */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+/* Estilo para o parágrafo de descrição */
+p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Estilo para o formulário */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os rótulos do formulário */
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Estilo para os campos de entrada do formulário */
+input[type="number"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para o botão de envio */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+/* Estilo para a tabela de registros */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff;
+}
