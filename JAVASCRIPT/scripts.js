@@ -90,6 +90,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+// Adiciona evento de clique para os botões de exclusão
+document.querySelectorAll(".btn-delete").forEach(button => {
+    button.addEventListener("click", function () {
+        removerRegistro(this.getAttribute("data-index"));
+    });
+});
+
 // Função para remover um registro
 function removerRegistro(index) {
     let registros = JSON.parse(localStorage.getItem("abastecimentos")) || [];

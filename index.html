@@ -14,16 +14,16 @@
     <p>Programa criado para saber a média de combustível gasto e quanto de Km por litro o seu carro está fazendo.</p>
     <form id="consumoForm">
         <label for="Km">Quilômetros percorridos: </label>
-        <input type="number" id="Km" name="Km" step="0.01" required>
+        <input type="number" id="Km" name="Km" step="0.01" required pattern="d+(\.\d{1,2}?)">
 
         <label for="litros">Litros consumidos: </label>
-        <input type="number" id="litros" name="litros" step="0.01" required>
+        <input type="number" id="litros" name="litros" step="0.01" required pattern="\d+(\.\d{1,2})?">
 
         <label for="data">Data do Abastecimento: </label>
         <input type="date" id="data" name="data" required>
 
         <label for="valor">Valor do Abastecimento: </label>
-        <input type="number" id="valor" name="valor" step="0.01" required placeholder="R$">
+        <input type="number" id="valor" name="valor" step="0.01" required placeholder="R$" pattern="\d+(\.\d{1,2})?">
 
         <button type="submit">Calcular</button>
     </form>
